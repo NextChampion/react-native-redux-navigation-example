@@ -1,0 +1,3 @@
+rootProject.name = 'CountersDemo'
+
+include ':app'

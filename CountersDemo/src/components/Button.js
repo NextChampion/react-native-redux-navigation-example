@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 export default class Button extends Component {
@@ -10,7 +11,7 @@ export default class Button extends Component {
   render() {
     const { text, onClick } = this.props;
     return (
-      <TouchableOpacity style={styles.Button}  onPress={onClick}>
+      <TouchableOpacity style={styles.Button} onPress={onClick}>
         <Text>{text}
         </Text>
       </TouchableOpacity>

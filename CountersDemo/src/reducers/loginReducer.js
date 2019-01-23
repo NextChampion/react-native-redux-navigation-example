@@ -7,7 +7,7 @@ const initialState = {
   user: null,
 }
 
-export default function loginIn(state=initialState, action) {
+export default function loginIn(state = initialState, action) {
   switch (action.type) {
     case types.LOGIN_IN_DOING:
       return {
@@ -34,7 +34,7 @@ export default function loginIn(state=initialState, action) {
       }
       break;
     default:
-    console.log(state);
+      console.log(state);
       return state;
   }
 }

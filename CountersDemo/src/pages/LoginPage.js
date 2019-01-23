@@ -13,11 +13,11 @@ import MainPage from './MainPage';
 const resetAction = NavigationActions.reset({
   index: 0,
   actions: [
-    NavigationActions.navigate({ routeName: 'Main'})
+    NavigationActions.navigate({ routeName: 'Main' })
   ]
 })
 
- class LoginPage extends Component {
+class LoginPage extends Component {
   static navigationOptions = {
     title: 'LoginPage',
   };
@@ -33,11 +33,11 @@ const resetAction = NavigationActions.reset({
 
   render() {
     const { login } = this.props;
-    return(
+    return (
       <View style={styles.container}>
         <Text>状态: {this.props.status}
         </Text>
-        <TouchableOpacity onPress={()=>login()} style={{marginTop: 50}}>
+        <TouchableOpacity onPress={() => login()} style={{ marginTop: 50 }}>
           <View style={styles.loginBtn}>
             <Text>登录
             </Text>

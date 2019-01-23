@@ -10,7 +10,7 @@ import MainPage from '../pages/MainPage'
 
 const App = StackNavigator({
   Login: { screen: LoginPage },
-  Main: { screen: MainPage},
+  Main: { screen: MainPage },
 });
 
 export default App

@@ -14,7 +14,7 @@ import *as counterAction from '../actions/counterAction';
 const resetAction = NavigationActions.reset({
   index: 0,
   actions: [
-    NavigationActions.navigate({ routeName: 'Login'})
+    NavigationActions.navigate({ routeName: 'Login' })
   ]
 })
 
@@ -31,11 +31,11 @@ class MainPage extends Component {
   render() {
     const { user } = this.props.navigation;
     const { count, incrementFn, decrementFn } = this.props;
-    return(
+    return (
       <View style={styles.container}>
         <Counter incrementFn={incrementFn} decrementFn={decrementFn} counter={count}>
         </Counter>
-        <TouchableOpacity onPress={this.logout.bind(this)} style={{marginTop: 50}}>
+        <TouchableOpacity onPress={this.logout.bind(this)} style={{ marginTop: 50 }}>
           <View>
             <Text>退出登录
             </Text>

@@ -14,12 +14,12 @@ export function login() {
   return dispatch => {
     dispatch(isLogining());
     // 模拟用户登录
-      let result = fetch('https://www.baidu.com/')
-          .then((res)=>{
-            dispatch(loginSuccess(true,user));
-          }).catch((e)=>{
-            dispatch(loginError(false));
-          })
+    let result = fetch('https://www.baidu.com/')
+      .then((res) => {
+        dispatch(loginSuccess(true, user));
+      }).catch((e) => {
+        dispatch(loginError(false));
+      })
   }
 }
 
